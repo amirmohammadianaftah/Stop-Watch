@@ -1,6 +1,6 @@
 # Stop-Watch
 
-![stowa](https://github.com/user-attachments/assets/65a7f716-7bc2-4785-89d4-e23e5d2614a8)
+![stowa](https://github.com/user-attachments/assets/7fbd6606-0310-4a4a-9c5d-69c4885771b2)
 
   - [Demo Project](https://amirmohammadianaftah.github.io/Stop-Watch/)
   - 
