@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to right, #16142f, #310f2a 70%);
+        }
+
+        .main {
+            z-index: 100;
+            position: absolute;
+            top: 60px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 400px;
+            height: 150px;
+            border: 2px solid #ef01ef;
+            box-shadow: 1px 1px 1px 1px #ef01ef;
+
+            >.num {
+                width: 100%;
+                height: 60%;
+                /* background-color: yellow; */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: num;
+                /* cursor: pointer; */
+
+                >h2 {
+                    /* background-color: red; */
+                    color: #0fdad3;
+                    width: fit-content;
+                    font-size: 40px;
+                    /* cursor: pointer; */
+                }
+
+                >span {
+                    color: #0fdad3;
+                    width: fit-content;
+                    font-size: 40px;
+                }
+            }
+
+            >.butt {
+                width: 100%;
+                height: 40%;
+                /* background-color: yellow; */
+                display: flex;
+                justify-content: space-evenly;
+                /* cursor: pointer; */
+
+                >button {
+                    /* background-color: red; */
+                    border: 2px solid #0fdad3;
+                    color: #0fdad3;
+                    background-color: transparent;
+                    width: 70px;
+                    height: 30px;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: 0.4s;
+
+                    &:hover {
+                        background-color: #0fdad35c;
+                    }
+                }
+            }
+        }
+
+        .brdr {
+            width: 400px;
+            height: 150px;
+            border-right: 2px solid #ef01ef;
+            border-bottom: 2px solid #ef01ef;
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translate(-45%);
+            /* background-color: yellow; */
+        }
+
+        ul {
+            width: 200px;
+            /* min-height: 30px; */
+            /* background-color: yellow; */
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            top: 270px;
+
+            >li {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                color: #eb9608;
+                border-bottom: 2px solid #eb9608;
+                font-size: 20px;
+                font-family: num;
+                height: 30px;
+                flex-wrap: wrap;
+
+                >button {
+                    margin: 0 auto;
+                    /* margin-top: 15px; */
+                    display: flex;
+                    width: 100px;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    background-color: transparent;
+                    color: #eb9608;
+                    border: 2px solid #eb9608;
+                    outline: none;
+                    /* opacity: 0; */
+                    cursor: pointer;
+                    /* transition: 0.4s; */
+                    flex-wrap: wrap;
+                    /* margin-top: 15px; */
+
+                    &:hover {
+                        background-color: #d11cad;
+                    }
+                }
+            }
+        }
+
+        footer {
+            >span {
+                position: absolute;
+                font-size: 30px;
+                bottom: 75px;
+                right: 20px;
+                color: white;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            }
+
+            >div {
+                color: wheat;
+                /* background-color: yellow; */
+                position: absolute;
+                font-size: 30px;
+                bottom: 25px;
+                right: 20px;
+
+                >a {
+                    /* background-color: yellow; */
+                    color: blueviolet;
+                }
+            }
+        }
+
+        @font-face {
+            font-family: num;
+            src: url(font/KodeMono-VariableFont_wght.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="num">
+            <h2 id="h">00</h2>
+            <span>:</span>
+            <h2 id="m">00</h2>
+            <span>:</span>
+            <h2 id="s">00</h2>
+            <span>:</span>
+            <h2 id="ms">00</h2>
+        </div>
+        <div class="butt">
+            <button data-status="off">start</button>
+            <button>pause</button>
+            <button>reset</button>
+            <button>lap</button>
+        </div>
+    </div>
+    <div class="brdr"></div>
+    <ul>
+
+    </ul>
+    <footer>
+        <span>
+            Coded By Amir Mohammadian
+        </span>
+        <div>
+            <a href="mailto:amir.mohammadian1999@gmail.com">
+                <i class="bi bi-envelope"></i>
+            </a>
+            <a href="https://www.instagram.com/amirmohammadian.web/">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amir-mohammadian-aa571b31b/">
+                <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://github.com/amirmohammadianaftah">
+                <i class="bi bi-github"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+<script src="script/script.js"></script>
+
+</html>
